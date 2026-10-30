@@ -14,7 +14,9 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://google.com*"],
+      "matches": [
+        "https://*://*"
+      ],
       "js": ["content_script_patch.js"],
       "run_at": "document_end"
     }
