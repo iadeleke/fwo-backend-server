@@ -11,14 +11,5 @@
   },
   "background": {
     "service_worker": "background.js"
-  },
-  "content_scripts": [
-    {
-      "matches": [
-        "https://google.com*"
-      ],
-      "js": ["content_script_patch.js"],
-      "run_at": "document_end"
-    }
-  ]
+  }
 }
