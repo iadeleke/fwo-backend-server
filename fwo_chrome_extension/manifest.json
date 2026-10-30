@@ -1,26 +1,16 @@
 {
   "manifest_version": 3,
   "name": "FWO Production Checkout Engine",
-  "version": "5.1.0",
-  "description": "Zero-Constraint Session Bridge & Proxy Token Attestation Engine.",
+  "version": "5.2.0",
+  "description": "Zero-Constraint Financial Session Bridge & Proxy Token Attestation Engine.",
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "scripting"
   ],
   "action": {
     "default_popup": "popup.html"
   },
   "background": {
     "service_worker": "background.js"
-  },
-  "content_scripts": [
-    {
-      "matches": [
-        "https://google.com*",
-        "https://google.com*",
-        "https://google.com*"
-      ],
-      "js": ["content_script_patch.js"],
-      "run_at": "document_end"
-    }
-  ]
+  }
 }
